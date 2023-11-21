@@ -956,6 +956,9 @@ html{
 
 
 @media screen and (max-width:599.98px) {
+    .section-one{
+        background-attachment: unset;
+    }
     .section-one .inner-wrap .inner-button{
         display: block;
     }
