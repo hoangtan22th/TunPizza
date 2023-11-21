@@ -8,7 +8,9 @@ function toggleModal(){
     modal.classList.toggle('hide');
 }
 
-
+setInterval(function() {
+    btnOpen.classList.toggle('button-toggle');
+},1000)
 
 btnOpen.addEventListener('click',toggleModal);
 btnClose.addEventListener('click',toggleModal);

@@ -57,7 +57,11 @@ html{
     padding: 1rem;
     border-radius: 3rem;
 }
-
+.button-toggle{
+    background-color: var(--color-chudao);
+    color: black;
+    border: 1px solid white;
+}
 .button-login:hover {
     background-color: white;
     color: black;
