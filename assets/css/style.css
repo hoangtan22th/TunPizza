@@ -45,7 +45,9 @@ html{
     background-color: var(--color-xam);
     border-radius: 0.3rem;
 }
-
+.header{
+    
+}
 .fa-regular {
     margin-right: 0.5rem;
 }
@@ -207,6 +209,9 @@ html{
     position: relative;
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
+
+    
 }
 
 .section-one .inner-wrap {
