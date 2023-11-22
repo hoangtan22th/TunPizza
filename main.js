@@ -108,7 +108,13 @@ try {
 }
 
 
-// login 
+// login      //order
+
+
+var orderOpen=document.querySelector('.button-sec1')
+orderOpen.addEventListener('click',function(){
+    window.location.href = './order.html'
+})
 
 
 var btnOpen = document.querySelector(".button-login");
