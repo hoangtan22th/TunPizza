@@ -180,16 +180,31 @@ html{
     padding: 2rem;
     border-radius: 0.8rem;
     text-align: center;
-    font-weight: 20;
+    font-weight: 300;
 }
 
-.form-signup h1 {
-    color: var(--color-chudao);
-}
+.form-signup .user {
+   background-color: var(--color-chudao);
+   border-radius: 50%;
+   display: inline-block;
+   height: 100px;
+   width: 100px;
+   
 
+   
+   
+}
+.form-signup .user i{
+    color: white;
+    line-height: 100px;
+    font-size: 4rem;
+    
+    
+}
 .signup-text {
     margin-bottom: 2rem;
     text-align: left;
+    
 }
 
 .signup-text label {
@@ -200,9 +215,16 @@ html{
 
 .signup-text input {
     width: 100%;
-    padding: 0.8rem;
+    padding: 1rem;
+    padding-left: 2rem;
     box-sizing: border-box;
     margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 3px #00000080;
+    border-radius: 20px;
+    margin-top: 5px;
+    
 }
 
 /* section-one */
