@@ -1,3 +1,10 @@
+/// click logo quay ve trang chu 
+document.querySelector('svg').addEventListener('click',()=>{
+  window.location.href="./index.html"
+})
+
+
+
 
 var barButton = document.querySelector('.bar');
 var openMenu = document.querySelector('.inner-wrap-bot');

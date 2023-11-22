@@ -48,6 +48,10 @@ html{
 .header{
     
 }
+svg{
+    cursor: pointer;
+    
+}
 .header .bar{
     color: var(--color-chudao);
     font-size: 3rem;
