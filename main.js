@@ -184,21 +184,21 @@ setInterval(function () {
   btnOpen.classList.toggle("button-toggle");
 }, 1000);
 
-btnOpen.addEventListener("click", toggleModal);
-btnClose.addEventListener("click", toggleModal);
-btnLogin.addEventListener("click", toggleModal);
+// btnOpen.addEventListener("click", toggleModal);
+// btnClose.addEventListener("click", toggleModal);
+// btnLogin.addEventListener("click", toggleModal);
 
-var form = document.querySelector(".section-form-head");
-var oderNow = document.querySelector(".inner-button .button-sec1");
-var oderClose = document.querySelector(".section-form .close");
-var bookTable = document.querySelector(".section-form .inner-btn");
-function toggleForm() {
-  form.classList.toggle("hide");
-}
+// var form = document.querySelector(".section-form-head");
+// var oderNow = document.querySelector(".inner-button .button-sec1");
+// var oderClose = document.querySelector(".section-form .close");
+// var bookTable = document.querySelector(".section-form .inner-btn");
+// function toggleForm() {
+//   form.classList.toggle("hide");
+// }
 
-oderNow.addEventListener("click", toggleForm);
-oderClose.addEventListener("click", toggleForm);
-bookTable.addEventListener("click", toggleForm);
+// oderNow.addEventListener("click", toggleForm);
+// oderClose.addEventListener("click", toggleForm);
+// bookTable.addEventListener("click", toggleForm);
 
 
  
