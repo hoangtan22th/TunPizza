@@ -159,11 +159,16 @@ svg{
     
 }
 
-.header .inner-nav-mobile{
+.inner-nav-mobile{
 
-    display: none;
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: -17px;
+    
+
 }
-.header .inner-nav-mobile ul li{
+.inner-nav-mobile ul li{
     display: block;
     margin: 0;
     padding: 0;
@@ -1033,18 +1038,18 @@ svg{
         background-color: black;
     }
     
-    .header .inner-wrap-bot{
+    .inner-nav-mobile{
         background-image: linear-gradient(to top right,black,#00000080);
         width: 70%;
         border-radius: 0px 0px 20px 20px;
     }
-    .header .inner-wrap-bot {
+    .inner-nav-mobile {
         backdrop-filter: blur(10px);
-        display: none;
+        
         
     }
     .header .inner-nav-mobile{
-        display: block;
+        display: none;
 
     }
     .header .inner-nav-mobile ul li{
