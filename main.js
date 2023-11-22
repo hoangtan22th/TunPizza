@@ -75,37 +75,37 @@ function changPage(i) {
 
 /// click logo quay ve trang chu 
 document.querySelector('svg').addEventListener('click',()=>{
-  window.location.href='../../index.html'
+  window.location.href='./index.html'
 })
 
 // nut home load laij trang web
 var home = document.querySelector('#home')
 home.addEventListener('click',function(){
-  window.location.href = '../../index.html'
+  window.location.href = './index.html'
 })
 
 //// nút đăng nhập 
 var dangNhap = document.querySelector('.button-login');
 dangNhap.addEventListener('click',function(){
-  window.location.href = '../../Login.html'
+  window.location.href = './Login.html'
 })
 
 /// nut dat ngay
 var datNgay = document.querySelector('.button-sec1');
 datNgay.addEventListener('click',()=>{
-  window.location.href = '../../order.html'
+  window.location.href = './order.html'
 })
 
 // nut xem menu 
 var xemMenu = document.querySelector('.button-sec2');
 xemMenu.addEventListener('click',()=>{
-  window.location.href = "../../menu.html"
+  window.location.href = "./menu.html"
 })
 
 // menu cake
 var menuCake = document.querySelector('#cake');
 menuCake.addEventListener('click',()=>{
-  window.location.href = '../../menu.html'
+  window.location.href = './menu.html'
 })
 
 //contact 
