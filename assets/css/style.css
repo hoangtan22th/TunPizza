@@ -48,6 +48,12 @@ html{
 .header{
     
 }
+.header .bar{
+    color: var(--color-chudao);
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
 .fa-regular {
     margin-right: 0.5rem;
 }
@@ -87,6 +93,7 @@ html{
     justify-content: space-around;
     height: 12rem;
     align-items: center;
+    background-color: black;
 }
 
 .inner-wrap-top .inner-social a {
@@ -101,7 +108,9 @@ html{
     animation: xoayvong 0.5s linear forwards;
     color: var(--color-chudao);
 }
-
+.inner-wrap-bot{
+    
+}
 .inner-wrap-bot .nav {
     display: flex;
     justify-content: center;
@@ -134,7 +143,35 @@ html{
     width: 20rem;
     height: 20rem;
 }
+.inner-wrap-bot{
+    
+    background-image: linear-gradient(to top right,black,#00000080);
+    border-radius: 0px 0px 20px 20px;
+    
+}
+.header .inner-wrap-bot {
+    backdrop-filter: blur(10px);
+    width: 100%;
+    
+}
 
+.header .inner-nav-mobile{
+
+    display: none;
+}
+.header .inner-nav-mobile ul li{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 10rem;
+    cursor: pointer;
+    text-shadow: 1px 1px 5px white;
+
+    
+
+
+}
 /* modal */
 
 .modal {
@@ -246,7 +283,7 @@ html{
     align-items: center;
     justify-content: center;
     height: 100%;
-    margin-top: 20rem;
+    margin-top: 25rem;
     position: relative;
 }
 
@@ -571,6 +608,10 @@ html{
 
 
 /* section five  */
+.section-five .grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
 .section-five{
     background-color: black;
     background-repeat: repeat;
@@ -786,7 +827,10 @@ html{
 .button-order{
     
 }
-
+.active-menu{
+    display: block !important;
+    
+}
 .listPage{
     padding: 10px;
     text-align: center;
@@ -978,6 +1022,49 @@ html{
 
 
 @media screen and (max-width:599.98px) {
+    .header .inner-wrap{
+        background-color: unset;
+    }
+    .inner-wrap-top{
+        background-color: black;
+    }
+    
+    .header .inner-wrap-bot{
+        background-image: linear-gradient(to top right,black,#00000080);
+        width: 70%;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .header .inner-wrap-bot {
+        backdrop-filter: blur(10px);
+        display: none;
+        
+    }
+    .header .inner-nav-mobile{
+        display: block;
+
+    }
+    .header .inner-nav-mobile ul li{
+        
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        line-height: 10rem;
+        cursor: pointer;
+        text-shadow: 1px 1px 5px white;
+
+        
+
+
+    }
+    .header .bar{
+        display: block;
+    }
+    .header .inner-social{
+        display: none;
+    }
+    .header .inner-nav{
+        display: none;
+    }
     .section-one{
         background-attachment: unset;
     }
@@ -992,6 +1079,12 @@ html{
     }
     .modal-inner{
         width: 30rem;
+    }
+    .inner-bottom{
+        font-size: 2.3rem;
+    }
+    .inner-bottom{
+        font-size: 1.3rem;
     }
     .button-form{
         width: 100%;
@@ -1025,6 +1118,9 @@ html{
     .section-four .inner-wrap h2{
         font-size: 2rem;
     }
+    .section-three .inner-wrap .inner-title{
+        width: 100%;
+    }
     .section-four .wrap-all-element{
         flex-direction: column;
     }
@@ -1044,19 +1140,36 @@ html{
         width: 70%;
         margin: auto;
     }
+    .section-five .grid {
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+    }
     .section-five .roww{
         grid-template-columns: auto;
         grid-gap: 10px;
     }
+    .section-five .inner-wrap .element-icon img {
+        width: 100%;
+        height: 100%;
+    }
+    .banner {
+
+    }
     .banner .detail{
         grid-template-columns: auto;
+        overflow: auto;
+        height: 300px;
+        top: 60px;
     }
     .banner .detail .img img
     {
-        top: 41.9%;
+        top: 0px;
+        left: 210px;
     }
     .banner .title{
         padding: 0;
+        height: calc(70% - 50px);
     }
     .banner .detail {
        top: 10%;
@@ -1081,5 +1194,8 @@ html{
     }
     .box1-decs,.box2-decs,.box3-decs{
         text-align: center;
+    }
+    .listPage{
+        display: flex;
     }
 }

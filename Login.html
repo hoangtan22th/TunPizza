@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="height: 100vh">
   <head>
 
     <meta charset="utf-8">
@@ -14,9 +14,91 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    
+    <style>
+        .header .inner-wrap{
+            position: relative;
+        }
+        .header .inner-social{
+            display: none;
+        }
+        .header .wrap-login{
+            display: none;
+        }
+        .form-login{
+           
+
+
+        }
+        .wrap-form{
+            text-align: center;
+            line-height: 50px;
+            display: grid;
+            grid-template-columns: auto auto;
+
+        }
+        .form-1:nth-child(1){
+            border-right: 2px solid #00000080;
+            background-color: var(--color-text);
+        }.form-1:nth-child(2){
+            
+            background-color: var(--color-chudao);
+        }
+        .form-1 i{
+            font-size: 7rem;
+            margin-top: 50px;
+            color: var(--color-chudao);
+
+        }
+        .color-text
+        {
+            color: var(--color-text)!important;
+        }
+        .form input{
+            width: 50%;
+            padding-left: 20px;
+            outline: none;
+            border: none;
+            box-shadow: 1px 1px 5px black;
+            border-radius: 20px;
+
+        }
+        .form-login .inner-wrap{
+            margin: 10px 0px;
+        }
+        .dangnhap{
+            width: 150px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 20px;
+
+
+        }
+        .dangnhap:hover{
+           background-color: var(--color-chudao);
+           color: black;
+           
+
+        }
+        @media screen and (max-width : 599.98px) {
+            .wrap-form{
+                grid-template-columns: auto ;
+            }
+            
+        }
+
+
+
+
+
+
+
+    </style>
+
+
+
+
     <!-- header  -->
-    <header class="header">
+    <header class="header ">
       <div class="container-normal">
           <div class="inner-wrap">
               <div class="inner-wrap-top ">
@@ -436,7 +518,7 @@
                     <li id="home">
                       Home
                     </li>
-                    <li id="cake">
+                    <!-- <li id="cake">
                       Menu Cake
                     </li>
                     <li id="contact">Contact
@@ -444,7 +526,7 @@
                     </li>
                     <li id="about">About
                       
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
                 <div class="inner-nav-mobile">
@@ -452,7 +534,7 @@
                     <li id="home">
                       Home
                     </li>
-                    <li id="cake">
+                    <!-- <li id="cake">
                       Menu Cake
                     </li>
                     <li id="contact">Contact
@@ -460,7 +542,7 @@
                     </li>
                     <li id="about">About
                       
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -469,708 +551,61 @@
   </header>
     <!-- end header  -->
 
-  <!-- modal  -->
-  <div class="modal hide">
-    <div class="modal-inner">
-      <form action="" class="form-signup">
-        <span class="close" >X</span>
-        <div class="user"><i class="fa-solid fa-user"></i></div>
-        <div class="signup-text">
-            <label for="">UserName</label>
-            <input type="email" placeholder="exam@email.com">
-        </div>
-        <div class="signup-text">
-            <label for="">PassWord</label>
-            <input type="password">
-        </div>
-        <button class="button button-form">Đăng Nhập</button>
-        <span>Bạn chưa có tài khoản? Đăng ký <a href="#" style="font-weight: bold;">Tại đây</a></span>
-    </form>
-    </div>
-  </div>
-  <!-- end modal  -->
-
-  <!-- section-one  -->
-  <div class="section-one">
-    <div class="container-normal">
-      <div class="inner-wrap">
-        <p class="inner-header">
-          Welcome
-        </p>
-        <p class="inner-middle">
-          WE COOK YOUR
-          <br>
-          DESIRED PIZZA RECIPE
-        </p>
-        <p class="inner-bottom">
-          Chìm đắm trong hương thơm và vị ngon tuyệt vời tại Pizza TAN - Nơi Hội Tụ Hạnh Phúc Ẩm Thực!
-        </p>
-        <div class="inner-button">
-          <div class="button button-sec1">
-            Đặt ngay
-          </div>
-          <div class="button button-sec2">
-            Xem Menu
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- end section-one -->
-
-  <!-- section form  -->
-  <div class="section-form-head hide">
-    <form class="section-form">
-      <div class="container">
-          <div class="inner-wrap">
-              <h2 class="inner-sub-title">
-                  RESERVATION
-              </h2>
-              <span class="close" >X</span>
-              <h1 class="inner-title">
-                  Book a Table
-              </h1>
-              <div class="inner-wrap-form">
-                  <input type="text" placeholder="Tên của bạn">
-                  <input type="text" placeholder="Email">
-                  <input type="text" placeholder="Số điện thoại">
-                  <input type="text" placeholder="Ngày đặt">
-                  <input type="text" placeholder="Thời gian">
-                  <input type="text" placeholder="Số người">
-                  <textarea placeholder="Nhắn nhủ"></textarea>
-                  
-              </div>
-              <div class="inner-btn">
-                  <button class="button button-form">Book a Table</button>
-              </div>
-          </div>
-      </div>
-    </form>
-  </div>
-  <!-- end section one  -->
-
-  <!-- section two  -->
-  <div class="section-two">
-    <div class="container-normal">
-      <div class="inner-wrap">
-        <div class="wrap-phone ">
-          <div class="head">
-            <i  class="fa-solid fa-phone icon"></i>
-            <span>
-              000 (123) 456 7890
-            </span>
-          </div>
-          <div class="title">
-            <p>Đường dây lóng</p>
-          </div>
-        </div>
-        <div class="wrap-street ">
-          <div class="head">
-            <i class="fa-solid fa-location-crosshairs icon"></i>
-            <span>198 West 21th Street</span>
-
-          </div>
-          <div class="title">
-            <p>Làm gì có địa chỉ này</p>
-          </div>
-        </div>
-        <div class="wrap-time ">
-          <div class="head">
-            <i class="fa-solid fa-clock icon"></i>
-            <span>Mở cửa Monday-Friday</span>
-          </div>
-          <div class="title">
-            <p>8:00am - 9:00pm</p>
+    <div class="form-login">
+        <form action="" class="form">
             
-          </div>
-        </div>
-        <div class="wrap-social ">
-          <div class="row2">
-            <a href="https://www.facebook.com/hoangtan.nguyen.3720/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-        </div>
-      </div>
+            <div class="wrap-form">
+                <div class="form-1">
+                    <div class="inner-wrap">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="inner-wrap">
+                        <label class="lable"></label>
+                    <input type="email" class="input" placeholder="Nhập tài khoản"></input>
+                    </div>
+                    <div class="inner-wrap">
+                        <label class="lable"></label>
+                    <input type="password" class="input" placeholder="Nhập mật khẩu"></input>
+                    
+                    </div>
+                    <div class="inner-wrap">
+                        <button class="button dangnhap">
+                            Đăng nhập
+                        </button>
+                        <p>Bạn mới biết đến TanPizza? </p>
+                        <a href="#">Đăng kí</a>
+                    </div>
+                </div>
+                <div class="form-1">
+                    <div class="inner-wrap">
+                        <i class="fa-solid fa-user color-text" ></i>
+                    </div>
+                    <div class="inner-wrap">
+                        <label class="lable"></label>
+                    <input type="email" class="input" placeholder="Nhập tài khoản"></input>
+                    </div>
+                    <div class="inner-wrap">
+                        <label class="lable"></label>
+                    <input type="password" class="input" placeholder="Nhập mật khẩu"></input>
+                    <div class="inner-wrap">
+                        <label class="lable"></label>
+                    <input type="password" class="input" placeholder="Nhập lại mật khẩu"></input>
+                    </div>
+                    <div class="inner-wrap">
+                        <button class="button dangnhap">
+                            Đăng Kí
+                        </button>
+                    </div>
+                </div>
+                
+
+            </div>
+        </form>
     </div>
-  </div>
-  <!-- end sectione two  -->
-
-<!-- section-three -->
-  <div class="section-three">
-    <div class="container-normal">
-      <div class="inner-wrap">
-        <div class="inner-picture ">
-          <img src="./assets/picture/pic3.jpg" alt="">
-        </div>
-        <div class="inner-title ">
-          <p>WELCOME TO
-           <i class="fa-solid fa-pizza-slice"></i> 
-           PIZZA A RESTAURANT
-        </p>
-          <p>Chào mừng bạn đến với Pizza TAN - nơi hòa quyện giữa nghệ thuật nướng bánh pizza và hương vị tinh tế. Tại quán, chúng tôi tự hào mang đến cho khách hàng những chiếc pizza độc đáo, được làm từ nguyên liệu tươi ngon và phục vụ với tình yêu thương.
-            <br>
-            Với đội ngũ đầu bếp tài năng, chúng tôi không chỉ tạo ra những chiếc pizza ngon mắt mà còn chăm sóc từng chi tiết nhỏ để đảm bảo bạn có một trải nghiệm ẩm thực tuyệt vời. Từ lớp bánh mỏng giòn đến sốt cà chua đặc trưng, mỗi chiếc pizza tại Pizza Delizioso là một tác phẩm nghệ thuật hòa quyện hương vị.
-            <br>
-            Hãy ghé thăm quán chúng tôi để khám phá thế giới pizza độc đáo, nơi hương thơm nồng nàn và sự sáng tạo gặp gỡ để tạo nên những bữa tiệc ẩm thực đáng nhớ. Chúng tôi tin rằng, mỗi miếng pizza không chỉ là một bữa ăn, mà còn là một hành trình khám phá vị giác.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-<!-- end section three -->
+  
 
-<!-- section-four -->
-<div class="section-four">
-  <div class="container">
-    <div class="inner-wrap">
-      <h2>OUR SERVICE</h2>
-      <p>Nâng cao Trải nghiệm Ẩm thực của Bạn với Dịch vụ Khách hàng Xuất sắc</p>
-      <div class="wrap-all-element">
-        <div class="wrap-element ">
-          <div class="element-icon">
-            <img src="./assets/picture/span-food-icon.png" alt="">
-          </div>
-          <div class="element-title">HEALTHY FOODS</div>
-          <div class="element-sub-title">Bữa Ăn Bổ Dưỡng và Ngon Miệng Cho Đời Sống Khỏe Mạnh
-          </div>
-        </div>
-        <div class="wrap-element ">
-          <div class="element-icon">
-            <img src="./assets/picture/span-icon-shipper.jpg" alt="">
-          </div>
-          <div class="element-title">FASTEST DELIVERY</div>
-          <div class="element-sub-title">Mang Hương Vị Đến Ngưỡng Cửa Bạn với Dịch vụ Nhanh Chóng Nhất
-          </div>
-        </div>
-        <div class="wrap-element ">
-          <div class="element-icon">
-            <img src="./assets/picture/span-icon-pizza.png" alt="">
-          </div>
-          <div class="element-title">ORIGINAL RECIPES</div>
-          <div class="element-sub-title">Sáng Tạo Những Món Ăn Tuyệt Vời với Hương Vị Bản Địa
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- end section four  -->
-
-<!-- section five -->
-<div class="section-five">
-  <div class="container-normal">
-    <div class="inner-wrap">
-      <div class="inner-title">
-        <h3>HOT PIZZA MEAL</h3>
-        <p>Khoái Lạc Vị Giác với Pizza Nóng Hổi - Hành Trình Hương Vị Phô Mai và Nhân Phong Phú.</p>
-      </div>
-      <div class="grid">
-        <!-- Pizza 1 -->
-        <div class="element-icon">
-          <img src="./assets/picture/food1.jpg" alt="">
-        </div>
-        <div class="wrap-element-title">
-          <p class="element-title">
-            Mediterranean Delight
-          </p>
-          <p class="element-sub-title">
-            Một hành trình ẩm thực đến vùng Địa Trung Hải, chiếc pizza này kết hợp hương vị độc đáo của dầu ôliu, cà chua chín, feta tươi và olives ngon
-          </p>
-          <div class="wrap-money">
-            <span class="money">$1.90</span>
-            <span class="button button-order">Order</span>
-          </div>
-        </div>
-
-        <!-- Pizza 2 -->
-        <div class="element-icon">
-          <img src="./assets/picture/food2.jpg" alt="">
-        </div>
-        <div class="wrap-element-title">
-          <p class="element-title">
-            Bold BBQ Bliss
-          </p>
-          <p class="element-sub-title">
-            Làm say mê vị giác với hương vị nồng nàn của sốt BBQ, thịt gà nướng, hành tây caramelized và phô mai hòa quyện
-          </p>
-          <div class="wrap-money">
-            <span class="money">$3.70</span>
-            <span class="button button-order">Order</span>
-          </div>
-        </div>
-
-        <!-- Pizza 3 -->
-        <div class="element-icon">
-          <img src="./assets/picture/food3.jpg" alt="">
-        </div>
-        <div class="wrap-element-title">
-          <p class="element-title">
-            Veggie Wonderland
-          </p>
-          <p class="element-sub-title">
-            Một thiên đường của rau sống tươi ngon như cà rốt, bắp cải, cà chua, và nấm, trên lớp sốt cà chua chín ngon
-          </p>
-          <div class="wrap-money">
-            <span class="money">$7.90</span>
-            <span class="button button-order">Order</span>
-          </div>
-        </div>
-
-        <!-- Pizza 4 -->
-        
-        <div class="wrap-element-title">
-          <p class="element-title">
-            Spicy Pepper Fiesta
-          </p>
-          <p class="element-sub-title">
-            Một cỗ máy hạ nhiệt độ với hỗn hợp cay nồng từ ớt jalapeño, thịt pepperoni, hành tây và một chút sốt cay
-          </p>
-          <div class="wrap-money">
-            <span class="money">$9.90</span>
-            <span class="button button-order">Order</span>
-          </div>
-        </div>
-        <div class="element-icon">
-          <img src="./assets/picture/food4.jpg" alt="">
-        </div>
-        <!-- Pizza 5 -->
-        
-        <div class="wrap-element-title">
-          <p class="element-title">
-            Truffle Elegance
-          </p>
-          <p class="element-sub-title">
-            Sự hòa quyện của mùi thơm nồng nàn từ dầu truffle, thịt nướng, nấm chanterelle và phô mai sữa bò
-          </p>
-          <div class="wrap-money">
-            <span class="money">$4.60</span>
-            <span class="button button-order">Order</span>
-          </div>
-        </div>
-        <div class="element-icon">
-          <img src="./assets/picture/food5.jpg" alt="">
-        </div>
-
-        <!-- Pizza 6 -->
-        
-        <div class="wrap-element-title">
-          <p class="element-title">
-            Hawaiian Luau
-          </p>
-          <p class="element-sub-title">
-            Một bữa tiệc trên bờ biển với hương vị ngọt ngào của sốt cà chua, thịt dăm heo, dứa tươi và phô mai mozzarella mềm mại
-          </p>
-          <div class="wrap-money">
-            <span class="money">$5.90</span>
-            <span class="button button-order">Order</span>
-          </div>
-        </div>
-        <div class="element-icon">
-          <img src="./assets/picture/food6.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- end seciton five  -->
-
-<!-- container item -->
-<div class="section-six">
-  <div class="container-item">
-    <div class="banner">
-      <div class="title">
-        Top sale Pizza
-  
-      </div>
-      <div class="detail">
-        <div class="info">
-          <h2>
-            Killer Pizza
-          </h2>
-          <div class="decs">
-            
-            Chiếc bánh pizza bán chạy nhất của chúng tôi ghi điểm bởi vỏ mỏng giòn, nước sốt cà chua chín và lớp phô mai tan chảy hoàn hảo. Sự kết hợp tinh tế giữa thịt ngon và rau sống tươi ngon làm nổi bật hương vị đặc trưng. 
-            
-          </div>
-        </div>
-        <div class="img">
-          <img src="./assets/picture/food1.jpg" alt="">
-        </div>
-        <div class="option">
-          Đặc biệt, một chút gia vị đặc biệt tạo nên một trải nghiệm ẩm thực độc đáo và không thể cưỡng. Chiếc pizza này không chỉ là một bữa ăn, mà còn là một hành trình thưởng thức hương vị hoàn hảo.
-          <br>
-          <b>Color</b>
-          <br>
-          <div class="ellipse" style="background-color:#555 ;" >
-        
-          </div>
-          <div class="ellipse" style="background-color:aqua ;" >
-        
-          </div>
-          <div class="ellipse" style="background-color:brown ;" >
-        
-          </div>
-        </div>
-  
-      </div>
-    </div>
-    
-    <div class="list">
-      <h2>Pizza các loại</h2>
-      <div class="item">
-        <img src="./assets/picture/food3.jpg" alt="">
-        <div class="content">
-          Sunny Margherita
-  
-        </div>
-        <div class="price">$20.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food2.jpg" alt="">
-        <div class="content">
-          Pesto Passion
-  
-        </div>
-        <div class="price">$21.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food4.jpg" alt="">
-        <div class="content">
-          Rustic Meat Feast
-  
-        </div>
-        <div class="price">$22.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food5.jpg" alt="">
-        <div class="content">
-          Tricolor Harvest
-  
-        </div>
-        <div class="price">$23.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food17.jpg" alt="">
-        <div class="content">
-          Seafood Symphony
-  
-        </div>
-        <div class="price">$12.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food6.jpg" alt="">
-        <div class="content">
-          Cheese Lover's Dream
-  
-        </div>
-        <div class="price">$11.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food18.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food19.jpg" alt="">
-        <div class="content">
-          Savory Spinach Delight
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food6.jpg" alt="">
-        <div class="content">
-          Mystic Mediterranean
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food4.jpg" alt="">
-        <div class="content">
-          Fiery Diablo
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food5.jpg" alt="">
-        <div class="content">
-          Tuscan Truffle Tryst
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food3.jpg" alt="">
-        <div class="content">
-          Sweet Potato Serenity
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food2.jpg" alt="">
-        <div class="content">
-          Mushroom Medley Madness
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food1.jpg" alt="">
-        <div class="content">
-          Sizzlin' Southwest
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food20.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food18.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food17.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food19.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food16.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food19.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food20.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food18.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food17.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food16.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food17.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food18.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food19.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food20.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-      <div class="item">
-        <img src="./assets/picture/food6.jpg" alt="">
-        <div class="content">
-          Mango Tango Tango
-  
-        </div>
-        <div class="price">$10.03</div>
-      </div>
-    </div>
-  <ul class="listPage">
-    <!-- <li class="active">1</li>
-    <li>2</li>
-    <li>3</li> -->
-  </ul>
-  
-  
-  
-  
-  </div>
-</div>
-
-
-<!-- end container item  -->
-
-
-
-<div class="section-ten">
-  <div class="container">
-      <h2 class="inner-sub-title">
-          CONTACT
-      </h2>
-      <h1 class="inner-title">
-          Contact Us
-      </h1>
-      <div class="inner-wrap">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3255899795977!2d106.62755497465552!3d10.786355989363024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ea9e906edcb%3A0x99b1d14bafe8907!2zVHLGsOG7nW5nIFRIQ1MgTMOqIEFuaCBYdcOibg!5e0!3m2!1svi!2s!4v1698655325156!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-  </div>
-</div>
-<!-- end section ten -->
-
-<!-- footer  -->
-<!-- <footer class="footer">
-  <div class="container">
-     <div class="inner-wrap">
-      <div class="inner-title">
-          <ul>
-              <li>
-                  <h4>RESTAURANTLY</h4>
-                  <h4>Useful Links</h4>
-                  <h4>Our Services</h4>
-                  <h4>Our Newsletter</h4>
-              </li>
-          </ul>
-
-      </div>
-      <div class="inner-content">
-          <div class="content-1">
-              <div><p>A108 Adam Street</p>
-                  <p>NY 535022, USA</p></div>
-              <div><p>Phone: +1 5589 55488 55</p>
-                  <p>Email: info@example.com</p></div>
-          </div>
-          <div class="content-2">
-              <ul>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>home</span>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>About us</span>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>
-                          Services</span>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>Terms of service</span>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>
-                          Privacy policy</span>
-                  </li>
-              </ul>
-          </div>
-          <div class="content-2">
-              <ul>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>home</span>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>About us</span>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>
-                          Services</span>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>Terms of service</span>
-                  </li>
-                  <li>
-                      <i class="fa-solid fa-angle-right"></i>
-                      <span>
-                          Privacy policy</span>
-                  </li>
-              </ul>
-          </div>
-          <div class="content-3">
-              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-          </div>
-      </div>
-     </div>
-
-  <div class="endfooter">
-      <span>Designed by HoangTan</h3>
-     </div>
-</footer> -->
 <div class="footer">
   <div class="container">
     <div class="inner-wrap">
