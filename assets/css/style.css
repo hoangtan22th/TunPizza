@@ -3,6 +3,17 @@
 html{
     position: relative;
 }
+.error-form{
+                    
+    text-align: center;
+    color: red;
+    border: 2px solid red;
+    font-size: 2rem;
+    width: 50%;
+    margin: auto;
+    line-height: 4rem;
+    padding: 10px;
+  }
 .box
 {
     width: 30%;

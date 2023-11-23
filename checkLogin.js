@@ -1,6 +1,6 @@
 
 var Login = document.getElementById('Login')
-
+var error = document.querySelector('.error-form')
 var flag
 
 var signupButton = document.getElementById('SignUp')
@@ -14,17 +14,18 @@ if(Login)
     if(LoginEmail.value==""||LoginPass=="")
     {
       alert('Nhập thông tin')
+      error.classList.toggle('hide');
     }
-    else{
-      if(LoginEmail.value==user.taikhoan && LoginPass.value==user.matkhau)
+    else if(user && LoginEmail.value==user.taikhoan && LoginPass.value==user.matkhau)
     {
-      alert("dang nhap thanh cong");
-      flag = true;
+        alert("dang nhap thanh cong");
+        flag = true;
     }
     else{
-      alert("khong thanh cong")
-      flag = false;
-      
+        alert("khong thanh cong");
+        error.classList.toggle('hide');
+        flag = false;
+
     }
     console.log(flag)
     if(flag==true)
@@ -38,7 +39,7 @@ if(Login)
     }
 
 
-    }
+    
  
 })
 
@@ -55,7 +56,7 @@ if(signupButton)
     
     if(signUpUser.value==="" || passSignUp.value==="" || passSignUpAgain.value==="")
     {
-      alert('Nhập dữ liệu')
+        error.classList.toggle('hide')
     }
     else
     {
