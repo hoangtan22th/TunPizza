@@ -160,7 +160,7 @@ svg{
 }
 
 .inner-nav-mobile{
-
+    backdrop-filter: blur(20px);
     display: block;
     position: absolute;
     top: 90px;
@@ -184,7 +184,7 @@ svg{
 /* modal */
 
 .modal {
-    display: block;
+    display: none;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.6);
     top: 0;
@@ -840,6 +840,9 @@ svg{
     display: block !important;
     
 }
+.none{
+    display: none;
+}
 .listPage{
     padding: 10px;
     text-align: center;
@@ -1083,9 +1086,7 @@ svg{
     .section-one .inner-wrap .inner-button .button-sec2{
         margin-top: 20px;
     }
-    .inner-wrap-bot .inner-nav ul{
-        
-    }
+   
     .modal-inner{
         width: 30rem;
     }

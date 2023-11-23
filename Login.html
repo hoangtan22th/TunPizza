@@ -12,9 +12,11 @@
 
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
   </head>
   <body>
     <style>
+      
         .header .inner-wrap{
             position: relative;
         }
@@ -36,22 +38,45 @@
             grid-template-columns: auto auto;
 
         }
-        .form-1:nth-child(1){
+        /* .form-1:nth-child(1){
             border-right: 2px solid #00000080;
             background-color: var(--color-text);
         }.form-1:nth-child(2){
             
             background-color: var(--color-chudao);
+        } */
+        .inner-wrap{
+          width: 100%;
+          text-align: center;
         }
+        
+        .form-1{
+          width: 80%;
+          border: 3px solid white;
+          background-color: var(--color-chudao);
+          height: 500px;
+          display: grid;
+          grid-template-columns: auto;
+          grid-gap: 0px;
+          
+      }
         .form-1 i{
             font-size: 7rem;
             margin-top: 50px;
-            color: var(--color-chudao);
+            
+           
 
         }
         .color-text
         {
             color: var(--color-text)!important;
+        }
+        .form{
+          background-color: var(--color-text);
+          display: flex;
+        justify-content: center;
+        align-items: center;
+        
         }
         .form input{
             width: 50%;
@@ -60,6 +85,7 @@
             border: none;
             box-shadow: 1px 1px 5px black;
             border-radius: 20px;
+            font-size: 3rem;
 
         }
         .form-login .inner-wrap{
@@ -83,6 +109,9 @@
             .wrap-form{
                 grid-template-columns: auto ;
             }
+            .form-1 input{
+              width: 80%;
+            }
             
         }
 
@@ -93,6 +122,7 @@
 
 
     </style>
+
 
 
 
@@ -546,55 +576,58 @@
     <div class="form-login">
         <form action="" class="form">
             
-            <div class="wrap-form">
-                <div class="form-1">
+            <!-- <div class="wrap-form"> -->
+
+
+                <!-- <div class="form-1">
                     <div class="inner-wrap">
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="inner-wrap">
-                        <label class="lable"></label>
-                    <input type="email" class="input" placeholder="Nhập tài khoản"></input>
+                      <input type="text" id="loginUser" placeholder="Nhập username">
                     </div>
-                    <div class="inner-wrap">
-                        <label class="lable"></label>
-                    <input type="password" autocomplete="current-password" class="input"placeholder="Nhập mật khẩu"></input>
-                    
+                    <div class="inner-wrap"><input type="passSignUp" id="loginPass" placeholder="Mật khẩu">
                     </div>
-                    <div class="inner-wrap">
-                        <button class="button dangnhap">
-                            Đăng nhập
-                        </button>
-                        <p>Bạn mới biết đến TanPizza? </p>
-                        <a href="#">Đăng kí</a>
+                    <div class="inner-wrap"><button class="button dangnhap" id="Login">Đăng nhập</button>
                     </div>
-                </div>
-                <div class="form-1">
-                    <div class="inner-wrap">
-                        <i class="fa-solid fa-user color-text" ></i>
+                    <div class="inner-wrap"> 
+                      <p>Bạn mới biết đến TanPizza? </p>
+                      <a href="#">Đăng kí</a>
                     </div>
-                    <div class="inner-wrap">
-                        <label class="lable"></label>
-                    <input type="email" class="input" placeholder="Nhập tài khoản"></input>
-                    </div>
-                    <div class="inner-wrap">
-                        <label class="lable"></label>
-                    <input type="password" autocomplete="current-password" class="input" placeholder="Nhập mật khẩu"></input>
-                    <div class="inner-wrap">
-                        <label class="lable"></label>
-                    <input type="password"autocomplete="current-password" class="input" placeholder="Nhập lại mật khẩu"></input>
-                    </div>
-                    <div class="inner-wrap">
-                        <button class="button dangnhap">
-                            Đăng Kí
-                        </button>
-                    </div>
-                </div>
-                
 
-            </div>
+                </div> -->
+            
+                
+                
+                
+            <!-- </div> -->
+            <div class="form-1">
+              <div class="inner-wrap">
+                  <i class="fa-solid fa-user color-text" ></i>
+              </div>
+              <div class="inner-wrap">
+                <input type="text" id="signUpUser" placeholder="Nhập tài khoản"></input>
+              </div>
+
+              <div class="inner-wrap">
+                <input type="password" id="passSignUp"  placeholder="Nhập mật khẩu"></input>
+              </div>
+              <div class="inner-wrap">
+                <input type="password" id="passSignUpAgain" placeholder="Nhập lại mật khẩu"></input>
+              </div>
+
+              <div class="inner-wrap">
+                  <button class="button dangnhap" id="SignUp">
+                      Đăng Kí
+                  </button>
+              </div>
+          
         </form>
     </div>
 
+   
+
+    
 
   
 
@@ -645,47 +678,8 @@
 <div class="end">
   Designed by HoangTan
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <-->
+    <script src="checkLogin.js"></script>
     <script src="./main.js"></script> 
-
+    
   </body>
 </html>

@@ -1,10 +1,32 @@
+
+
+// bam nut tai day
+var taiday = document.getElementById('taiday')
+
+if(taiday)
+{
+  taiday.addEventListener('click',()=>
+
+  {
+    window.location.href="./Login.html"
+  }
+)
+
+}
+
+
 //nut bar
+//
+
 var bar = document.querySelector('.bar')
 var navMobile = document.querySelector('.inner-nav-mobile')
-bar.addEventListener('click',function(){
-  navMobile.classList.toggle('active-menu')
-  console.log("thanh cong")
-})
+if(bar)
+{
+  bar.addEventListener('click',function(){
+    navMobile.classList.toggle('active-menu')
+    console.log("thanh cong")
+  })
+}
 /// click logo quay ve trang chu 
 document.querySelector('svg').addEventListener('click',()=>{
   window.location.href='./index.html'
@@ -12,72 +34,114 @@ document.querySelector('svg').addEventListener('click',()=>{
 
 // nut home load laij trang web
 var homeFull = document.getElementById('home')
-homeFull.addEventListener('click',function(){
-  window.location.href = './index.html'
-})
-
+if(homeFull){
+  homeFull.addEventListener('click',function(){
+    window.location.href = './index.html'
+  })
+  
+}
 var homeMobile = document.querySelector('.home')
-homeMobile.addEventListener('click',function(){
-  window.location.href = './index.html'
-})
-
+if(homeMobile)
+{
+  homeMobile.addEventListener('click',function(){
+    window.location.href = './index.html'
+  })
+  
+}
 //// nút đăng nhập 
 var dangNhap = document.querySelector('.button-login');
+var modal =document.querySelector('#modal')
+if(modal)
+{
+  
 dangNhap.addEventListener('click',function(){
-  window.location.href = './Login.html'
+  modal.classList.toggle('active-menu')
 })
+
+}
+var close = document.querySelector('#close')
+if(close)
+{
+  close.addEventListener('click',()=>{
+    modal.classList.toggle('active-menu')
+  })
+}
 
 /// nut dat ngay
 var datNgay = document.querySelector('.button-sec1');
-datNgay.addEventListener('click',()=>{
-  window.location.href = './order.html'
-})
+if(datNgay)
+{
+  datNgay.addEventListener('click',()=>{
+    window.location.href = './order.html'
+  })
+}
 
 // nut xem menu 
 var xemMenu = document.querySelector('.button-sec2');
-xemMenu.addEventListener('click',()=>{
-  window.location.href = "./menu.html"
-})
-
+if(xemMenu)
+{
+  xemMenu.addEventListener('click',()=>{
+    window.location.href = "./menu.html"
+  })
+  
+}
 // menu cake
 var menuCake = document.querySelector('.cake');
-menuCake.addEventListener('click',()=>{
-  window.location.href = './menu.html'
-})
-
+if(menuCake)
+{
+  menuCake.addEventListener('click',()=>{
+    window.location.href = './menu.html'
+  })
+  
+}
 //contact 
 var contact= document.querySelector('.contact')
 var teleContact =document.querySelector('.section-ten')
-contact.addEventListener('click',function(){
-  teleContact.scrollIntoView({behavior:"smooth"})
-})
-
+if(contact)
+{
+  contact.addEventListener('click',function(){
+    teleContact.scrollIntoView({behavior:"smooth"})
+  })
+  
+}
 // about
 var aboutMobile= document.querySelector('.about')
 var teleAboutMobile =document.querySelector('.footer')
-aboutMobile.addEventListener('click',function(){
-  teleAboutMobile.scrollIntoView({behavior:"smooth"})
-})
+if(aboutMobile)
+{
+  aboutMobile.addEventListener('click',function(){
+    teleAboutMobile.scrollIntoView({behavior:"smooth"})
+  })
+}
 // menu cake
 var menuCakeMobiel = document.querySelector('#cake');
-menuCakeMobiel.addEventListener('click',()=>{
-  window.location.href = './menu.html'
-})
+if(menuCakeMobiel)
+{
+  menuCakeMobiel.addEventListener('click',()=>{
+    window.location.href = './menu.html'
+  })
+}
 
 //contact 
 var contactMobile= document.querySelector('#contact')
 var teleContactMobile =document.querySelector('.section-ten')
-contactMobile.addEventListener('click',function(){
-  teleContactMobile.scrollIntoView({behavior:"smooth"})
-})
-
+if(contactMobile)
+{
+  contactMobile.addEventListener('click',function(){
+    teleContactMobile.scrollIntoView({behavior:"smooth"})
+  })
+  
+}
 // about
 var about= document.querySelector('#about')
 var teleAbout =document.querySelector('.footer')
-about.addEventListener('click',function(){
-  teleAbout.scrollIntoView({behavior:"smooth"})
-})
-
+if(about)
+{
+  about.addEventListener('click',function(){
+    teleAbout.scrollIntoView({behavior:"smooth"})
+  })
+  
+}
 // nut líst
 let thisPage = 1;
 let limit = 6;
